@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-lastest
     steps:
       - name: The First
-        run: echo Hellos
+        run: echo Hello64
 
   test2:
     needs: [test]
