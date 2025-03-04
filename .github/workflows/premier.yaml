@@ -10,9 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: The First
-        run: |
-          echo Hello
-          return 1
+        run: echo Hello
 
   test2:
     needs: [test]
@@ -20,3 +18,11 @@ jobs:
     steps:
       - name: The Second
         run: echo Good Bye
+
+  Biderie:
+    needs: [test2]
+    uses: ./.github/workflows/ghcr.yaml
+    secrets: inherit
+    permissions:
+      contents: read
+      packages: write
