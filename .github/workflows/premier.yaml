@@ -26,3 +26,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+
+  Aloi:
+    needs: [Biderie]
+    uses: /.github/worflows/deploy.yaml
+    secrets: inherit
