@@ -38,5 +38,5 @@ jobs:
           passsword: ${{secrets.PASSWORD}}
 
         script: |
-          docker pull ghcr.io/azor64/back-ausecours:lastest
+          docker pull ghcr.io/azor64/back-ausecours:latest
           docker-compose up -d
