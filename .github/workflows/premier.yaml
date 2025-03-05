@@ -29,5 +29,5 @@ jobs:
 
   Aloi:
     needs: [Biderie]
-    uses: ./.github/worflows/deploy.yml
+    uses: ./.github/workflows/deploy.yml
     secrets: inherit
