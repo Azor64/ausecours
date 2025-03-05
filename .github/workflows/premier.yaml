@@ -27,7 +27,7 @@ jobs:
       contents: read
       packages: write
 
-  Aloi:
+  Aloiii:
     needs: [Biderie]
     uses: ./.github/workflows/deploy.yml
     secrets: inherit
