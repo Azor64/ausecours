@@ -30,7 +30,7 @@ jobs:
           template: https://github.com/Azure/azure-quickstart-templates/blob/master/quickstarts/microsoft.compute/vm-simple-linux/azuredeploy.json
           parameters: adminUsername=${{secrets.AZURE_VM_LOGIN}} adminPasswordOrKey=${{secrets.AZURE_VM_PASSWORD}} vmName="Canary" vmSize "Standard_B1s"
       - name: Get Public IP@
-        if: sucess()
+        if: success()
         uses: azure/CLI@v2
         with:
           inlineScript: |
