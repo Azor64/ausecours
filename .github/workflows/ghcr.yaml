@@ -32,4 +32,4 @@ jobs:
       with: 
         Context: backend
         push: true
-        tags: ${{env.REGISTRY}}/azor64/back-ausecours:lastest
+        tags: ${{env.REGISTRY}}/azor64/back-ausecours:latest
